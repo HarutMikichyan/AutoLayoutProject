@@ -143,7 +143,7 @@ class ProfileViewController: UIViewController {
         regularConstraints.append(userName.topAnchor.constraint(equalTo: signOutButton.bottomAnchor, constant: 40))
         regularConstraints.append(userName.centerXAnchor.constraint(equalTo: signOutButton.centerXAnchor))
         //Horizontal Size Class Regular && Vertical Size Class Regular
-        iPhadConstraints.append(userName.centerXAnchor.constraint(equalTo: profileImage.centerXAnchor, constant: view.bounds.width/4))
+        iPhadConstraints.append(userName.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor, constant: 40))
         iPhadConstraints.append(userName.topAnchor.constraint(equalTo: profileImage.centerYAnchor))
     }
     
